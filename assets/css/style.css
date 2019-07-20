@@ -1,0 +1,27 @@
+body {
+    height: 100%;
+}
+
+body {
+    text-align: center;
+    /*background-image: url("../images/rick-and-morty.jpg");*/
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'ZCOOL KuaiLe', cursive;
+}
+#start{
+    background-image: url("../images/download.jpg");
+    margin-top: 15%;
+    background-size: 50%;
+    
+
+}
+button {
+    display: block;
+    width: 400px;
+    height: 100px;
+    margin: 10px auto 0;
+    font-size: 42px;
+    color:black;
+    border: 0;
+}
