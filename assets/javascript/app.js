@@ -5,62 +5,62 @@ var card =$("#quiz-area");
 var questions = [
     {
         question: "How many seasons has the show Rick and Morty had to date? ",
-        answers: [" One season ."," Two Seasons ."," Three Seasons .", " Four Seasons ."],
-        correctAnswer:" Three Seasons ."
+        answers: [" One season "," Two Seasons "," Three Seasons ", " Four Seasons "],
+        correctAnswer:" Three Seasons "
    
        },
     {
         question: "Which implement does Rick use to travel between dimensions?",
-        answers: ["Portal Gun"," Rift Ray ."," Jump Laser ."," Interdimensional Ray ."],
-        correctAnswer:"Portal Gun"
+        answers: [" Portal Gun "," Rift Ray "," Jump Laser "," Interdimensional Ray "],
+        correctAnswer:" Portal Gun "
    
     },
     {
         question: "What is the name of Morty's crush?",
-        answers: ["Annie","Jessica","Summer","Heather"],
-        correctAnswer:"Jessica"
+        answers: [" Annie "," Jessica "," Summer "," Heather "],
+        correctAnswer:" Jessica "
    
     },
     {
         question: "Who killed Birdperson in a horrific turnabout during his wedding?",
-        answers: ["Tammy","Rick","Beth","Summer"],
-        correctAnswer:"Tammy"
+        answers: [" Tammy "," Rick "," Beth "," Summer "],
+        correctAnswer:" Tammy "
    
     },
     {
         question: "It's not uncommon to catch Beth drinking what?",
-        answers: ["Vodka and Cranberry","Rose","Red Wine","White wine"],
-        correctAnswer:"Red Wine"
+        answers: [" Vodka and Cranberry "," Rose "," Red Wine "," White wine "],
+        correctAnswer:" Red Wine "
    
     },
     {
         question: "In one episode, it's revealed that Rick has built a theme park inside of a homeless man. What is that theme park called?",
-        answers: ["Body Land","Anatomy Park","Intestine Town","Pirates of the Pancreas"],
-        correctAnswer:"Anatomy Park"
+        answers: [" Body Land "," Anatomy Park "," Intestine Town "," Pirates of the Pancreas "],
+        correctAnswer:" Anatomy Park "
    
     },
     {
         question: "Morty accidentally had a child who is half alien. What species is his non-human half?",
-        answers: ["Smarkian","Cromulan","Gazorpazorp","Gromflomite"],
-        correctAnswer:"Gazorpazorp"
+        answers: [" Smarkian "," Cromulan "," Gazorpazorp "," Gromflomite "],
+        correctAnswer:" Gazorpazorp "
    
     },
     {
         question: "Who are the creators of Rick and Morty?",
-        answers: ["Rebecca Sugar and Trey Parker","Matt Groening and J.G. Quintel","Seth MacFarlane and Pendleton Ward","Dan Harmon and Justin Roiland"],
-        correctAnswer:"Dan Harmon and Justin Roiland"
+        answers: [" Rebecca Sugar and Trey Parker "," Matt Groening and J.G. Quintel "," Seth MacFarlane and Pendleton Ward "," Dan Harmon and Justin Roiland "],
+        correctAnswer:" Dan Harmon and Justin Roiland "
    
     },
     {
         question: "What is the name of this character, who Beth shot (and then realized he was in fact a long time family friend)?",
-        answers: ["King Flippy Nips","Snuffles","Squanchy","Mr. Poopybutthole"],
-        correctAnswer:"Mr. Poopybutthole"
+        answers: [" King Flippy Nips "," Snuffles","Squanchy "," Mr. Poopybutthole "],
+        correctAnswer:" Mr. Poopybutthole "
    
     },
     {
         question: " What substance is Rick addicted to?",
-        answers: ["Alcohol","Cocaine","Weed","Ecstasy"],
-        correctAnswer:"Alcohol"
+        answers: [" Alcohol "," Cocaine "," Weed "," Ecstasy "],
+        correctAnswer:" Alcohol "
    
     },
     
