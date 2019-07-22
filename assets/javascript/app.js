@@ -4,21 +4,15 @@ var card =$("#quiz-area");
 
 var questions = [
     {
-     question: "how many season the show rick and morty has up to this date ",
-     answers: ["one season","two seasons","three seasons", "four seasons"],
-     correctAnswer:"three seasons"
-
-    },
+        question: "How many seasons has the show Rick and Morty had to date? ",
+        answers: [" One season ."," Two Seasons ."," Three Seasons .", " Four Seasons ."],
+        correctAnswer:" Three Seasons ."
+   
+       },
     {
         question: "Which implement does Rick use to travel between dimensions?",
-        answers: ["Portal gun","Rift Ray","Jump Laser","Interdimensional Ray"],
-        correctAnswer:"Portal gun"
-   
-    },
-    {
-        question: "what does wubba lubba dub dub mean?",
-        answers: ["please leave","im a genius","lets party","im in great pain"],
-        correctAnswer:"im in great pain"
+        answers: ["Portal Gun"," Rift Ray ."," Jump Laser ."," Interdimensional Ray ."],
+        correctAnswer:"Portal Gun"
    
     },
     {
@@ -35,8 +29,8 @@ var questions = [
     },
     {
         question: "It's not uncommon to catch Beth drinking what?",
-        answers: ["Vodka and Cranberry","Rose","Red wine","White wine"],
-        correctAnswer:"red wine"
+        answers: ["Vodka and Cranberry","Rose","Red Wine","White wine"],
+        correctAnswer:"Red Wine"
    
     },
     {
@@ -46,7 +40,7 @@ var questions = [
    
     },
     {
-        question: "Morty does accidentally have a child who is half alien. What species is his non-human half?",
+        question: "Morty accidentally had a child who is half alien. What species is his non-human half?",
         answers: ["Smarkian","Cromulan","Gazorpazorp","Gromflomite"],
         correctAnswer:"Gazorpazorp"
    
@@ -63,6 +57,12 @@ var questions = [
         correctAnswer:"Mr. Poopybutthole"
    
     },
+    {
+        question: " What substance is Rick addicted to?",
+        answers: ["Alcohol","Cocaine","Weed","Ecstasy"],
+        correctAnswer:"Alcohol"
+   
+    },
     
 ]
  var timer;
@@ -73,24 +73,23 @@ var questions = [
     incorrect: 0,
     counter: 180,
 
-    countdown: function(){
-         game.counter--;
-
-         $("#couter-number").text(game.counter);
-         if (game.counter === 0){
-         
-         game.done();
+    countdown: function() {
+        game.counter--;
+        $("#counter-number").html(game.counter);
+        if (game.counter === 0) {
+            console.log("timeup");
+            game.done();
         }
 
     },
 
     start:function() {
-        timer = setInterval(game.countdown, 180);
-
+        timer = setInterval(game.countdown, 1000);
+        
         $("#sub-wrapper").prepend(
             "<h2>Time Remaining: <span id='counter-number'>180</span> Seconds</h2>"
         );
-
+            //bind()
         $("#start").remove();
 
         for (var i = 0; i < questions.length; i++) {
@@ -117,11 +116,15 @@ var questions = [
         clearInterval(timer);
         $("#sub-wrapper h2").remove();
 
-        card.html("<h2>All Done!</h2>");
+        card.html("<h2>wubba lubba dub dub!</h2>");
         card.append("<h3>Correct Answers: " + this.correct + "</h3>");
         card.append("<h3>Incorrect Answers: " + this.incorrect + "</h3>")
     }
 };
+
+
+
+
 $(document).on("click", "#start", function() {
     game.start();
 });

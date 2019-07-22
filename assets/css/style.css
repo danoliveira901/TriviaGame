@@ -4,13 +4,17 @@ body {
 
 body {
     text-align: center;
-    /*background-image: url("../images/rick-and-morty.jpg");*/
     background-repeat: no-repeat;
     background-size: 100%;
-    font-family: 'ZCOOL KuaiLe', cursive;
+    font-family: 'B612', sans-serif;
+    color: white;
+    background-image: url("../images/portals.png");
+    background-repeat: repeat;
+    /*background-size: cover;*/
+    
 }
 #start{
-    background-image: url("../images/download.jpg");
+    
     margin-top: 15%;
     background-size: 50%;
     
@@ -25,3 +29,40 @@ button {
     color:black;
     border: 0;
 }
+#wrapper {
+    width: 960px;
+    min-height: 80%;
+    box-sizing: border-box;
+    padding: 5% 0;
+    margin: 5% auto;
+   /* background-image: url(../images/rick.png);background-position: center; */
+    background-repeat: no-repeat;
+    background-color: black;
+   
+}
+#wrapper ::before{
+   
+
+}
+#sub-wrapper {
+    position: relative;
+    top: 20%;
+    
+}
+#imput{
+    font-size: 50px;
+}
+
+h2 {
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+h1 {
+    margin-bottom: 50px;
+    font-size: 7.5;
+    font-weight: bold;
+    color: white;
+}
+
+
+
